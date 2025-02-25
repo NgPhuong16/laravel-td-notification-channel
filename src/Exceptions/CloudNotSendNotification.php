@@ -8,7 +8,7 @@ class CloudNotSendNotification extends \Exception
 {
     private Response $response;
 
-    public function __construct(Response $response, string $message, int $code = null)
+    public function __construct(Response $response, string $message, ?int $code = null)
     {
         $this->response = $response;
         $this->message = $message;
